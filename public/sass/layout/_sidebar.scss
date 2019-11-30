@@ -1,0 +1,86 @@
+.sidebar {
+    background-color:$color-secondary;
+    grid-column: sidebar-start / center-start;
+
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (max-width: $bp-large) {
+        grid-column: 1 / -1;
+        // grid-row: 2 / 3;
+        align-items: center;
+    }
+    
+    .navigation{
+
+        list-style: none;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media only screen and (max-width: $bp-large) {
+        flex-direction: row;
+        margin: .8rem 2rem 3rem 2rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            margin: .8rem 2rem 3rem 2rem;
+            }
+
+        &__link{
+            margin-top: 1.3rem;
+            border: solid rgba(240, 255, 255,.5);
+            @media only screen and (max-width: $bp-large) {
+                margin-right: 0.5rem;
+                }
+        }
+        &__link:link,
+        &__link:visited {
+            font-size: 1.4rem;
+            color: #fff;
+            text-decoration: none;
+            font-family: $font-display;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 1.5rem;
+            display: block;
+            transition: all .2s;
+        }
+    
+        &__link:hover,
+        &__link:active {
+            background-color: #115f77 ;
+            transform: translateY(-3px);
+        }
+    }
+}
+
+// .nav-btn {
+//     border: none;
+//     border-radius: 0;
+
+//     background-color: #fff;
+//     height: 2px;
+//     width: 4.5rem;
+//     margin-top: 4rem;
+
+//     &::before,
+//     &::after {
+//         background-color: #fff;
+//         height: 2px;
+//         width: 4.5rem;
+//         content: "";
+//         display: block;
+//     }
+
+//     &::before { transform: translateY(-1.5rem); }
+//     &::after { transform: translateY(1.3rem); }
+
+//     @media only screen and (max-width: $bp-large) {
+//         margin-top: 0;
+//         margin-right: 3rem;
+
+//         &::before { transform: translateY(-1.2rem); }
+//         &::after { transform: translateY(1rem); }
+//     }
+// }

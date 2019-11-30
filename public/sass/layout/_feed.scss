@@ -1,0 +1,59 @@
+.feed {
+    background-color: $color-secondary;
+    grid-column: 1 / -1;
+    padding: 3rem;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $bp-large) {
+        grid-column: 1/-1;
+        flex-direction: row;
+    }
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: 1/-1;
+        flex-direction:row ;
+    }
+    @media only screen and (max-width: $bp-medium) {
+        grid-column: 1/-1;
+        flex-direction:column ;
+    }
+    &__cart{
+        background-image: linear-gradient(rgba($color-secondary, .5), rgba($color-secondary, .5)), url(../img/home.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: 2rem 0 2rem 0;
+        padding: 2rem 2rem 0 2rem;
+        margin-left: 1rem;
+        height: 20rem;
+        width: 100%;
+        border: solid rgba(240, 255, 255,.5);
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        
+    
+        &:hover,
+        &link:active {
+            // background-color: rgba(#fff, .05);
+            background-image: linear-gradient(rgba($color-blue-3, 0.3), rgba($color-blue-3, .3)), url(../img/home.jpg);
+            // transform: scale(1.1);
+        }
+  
+        &--title {
+            width: 100%;
+            font-family: $font-display;
+            font-size: 1.6rem;
+            // text-align: center;
+            padding: 1rem;
+            background-color: rgba($color-primary, .8);
+            color: #fff;
+            font-weight: 400;
+            // transform: translateY(50%);
+        }
+    }
+}
