@@ -15,7 +15,7 @@
         grid-column: 1 / -1;
     }
 
-    &__list {
+    .about__list {
         display: grid;
         grid-template-columns: min-content max-content;
         grid-column-gap: 2rem;

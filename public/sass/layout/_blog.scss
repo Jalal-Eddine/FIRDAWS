@@ -1,5 +1,6 @@
 .blog{
-    grid-column: col-start / full-end;
+    grid-column: center-start / full-end;
+    display: grid;
     align-content: center;
     justify-content: center;
     justify-items: center;
@@ -12,11 +13,14 @@
         }
     }
     
+
+    
     .author {
+        grid-row: 1/-1;
         background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url(../img/home.jpg);
         background-size: cover;
         // grid-column: col-start 7 / full-end;
-        padding: 3rem;
+        padding: 0 25vw 0 25vw;
 
         display: grid;
         align-content: center;

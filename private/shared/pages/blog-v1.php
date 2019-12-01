@@ -1,9 +1,9 @@
         
     <section class="blog">
             <div class="author">
-                    <img src="img/realtor-1.jpeg" alt="Author" class="author__img">
+                    <img src="img/me-large.jpg" alt="Author" class="author__img">
                     <div class="author__details">
-                        <h4 class="heading-4 heading-4--light">Erik Feinman</h4>
+                        <h4 class="heading-4 heading-4--light">Jalal-Eddine</h4>
                         <div class="author__details--contact">
                             <a href="https://twitter.com/HabbaziJalal" target="_blank">
                                 <ion-icon name="logo-twitter"></ion-icon>
@@ -18,7 +18,7 @@
                                 <ion-icon name="logo-github"></ion-icon>
                             </a>
                         </div>
-                        <p class="author__details--date">date of publishing</p>
+                        <p class="author__details--date">Published at - <?php echo date('D'); ?></p>
                     </div>
             </div> 
             <h1 class="blog__title">Blog Title</h1>
