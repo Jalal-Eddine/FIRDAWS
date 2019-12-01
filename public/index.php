@@ -56,7 +56,7 @@ if(isset($_GET['id'])) {
       if(isset($page)) {
         
         // show the page from the database
-        $allowed_tags = '<div><img><h1><h2><h3><h4><h5><h6><p><svg><use><button><section><figure><br><strong><em><ul><li>';
+        $allowed_tags = '<div><img><h1><h2><h3><h4><h5><h6><p><svg><use><button><section><figure><br><strong><em><ul><li><ion-icon>';
         echo strip_tags($page['content'], $allowed_tags);
         
       } else {

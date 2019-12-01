@@ -17,7 +17,8 @@
 
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        margin-top: 3rem;
+        // justify-content: center;
         @media only screen and (max-width: $bp-large) {
         flex-direction: row;
         margin: .8rem 2rem 3rem 2rem;
@@ -51,6 +52,11 @@
         &__link:active {
             background-color: #115f77 ;
             transform: translateY(-3px);
+        }
+        .selected{
+            &:hover{
+            color: bisque;
+            }
         }
     }
 }

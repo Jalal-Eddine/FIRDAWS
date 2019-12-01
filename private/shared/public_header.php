@@ -26,16 +26,17 @@
   $subject_id = $subject_id ?? '';
   $visible = $visible ?? true;
 ?>
-        <!-- 
+<!-- 
          //?######################
         //?###### SIDEBAR  ######
-        //?######################
-        -->
-        <?php $nav_subjects = find_all_subjects(['visible' => $visible]); ?>
-        <body class="<?php if($nav_subject['id'] == $subject_id) { echo 'container'; }elseif($nav_subject['id'] =='1'){ echo 'blog';} ?>">
-        <div class="sidebar">
-            <!-- <button class="nav-btn"></button> -->
+        //?###################### 
+      -->
 
+
+        <body class="<?php if (isset($page)){ echo 'blog-grid';}else{echo 'container';} ?>">
+        <div class="<?php if (isset($page)){ echo 'sidebar';}else{echo 'sidebar';} ?>">
+            <!-- <button class="nav-btn"></button> -->
+            <?php $nav_subjects = find_all_subjects(['visible' => $visible]); ?>
           <ul class="navigation">
             <?php while($nav_subject = mysqli_fetch_assoc($nav_subjects)) { ?>
               <?php // if(!$nav_subject['visible']) { continue; } ?>

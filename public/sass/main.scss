@@ -1,9 +1,10 @@
 @import "base";
-// @import "pages/blog";
+@import "pages/blog-grid";
 @import "typography";
 
 @import "layout/sidebar";
 @import "layout/header";
+@import "layout/blog";
 @import "layout/about";
 @import "layout/feed";
 // @import "layout/features";
