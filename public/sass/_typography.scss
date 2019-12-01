@@ -38,18 +38,18 @@
 //? ##########################
 //? #### BLOG typography #####
 //? ##########################
-.blog__title{
+.blog_content_title{
     font-size: 6rem;
     font-family: $font-blog-title;
     font-weight: 400;
     color: rgba($color: #000000, $alpha: 0.8);
 }
-.blog__title-2{
+.blog_content_title-2{
     font-size: 2rem;
     font-family: $font-blog-primary;
     font-weight: 300;
 }
-.blog__paragraph{
+.blog_content_paragraph{
     font-size: 2.5rem;
     font-family: $font-blog-primary;
     font-weight: 300;
