@@ -4,13 +4,13 @@
 //?###### Slider with feed ######
 //?##############################
 
- include(SHARED_PATH . '/layout/slider.php');
+//  include(SHARED_PATH . '/layout/slider.php');
 
   //?##############################
 //?########### about/news  #######
 //?##############################
 
-include(SHARED_PATH . '/layout/about.php');
+// include(SHARED_PATH . '/layout/about.php');
  
 //?##############################
 //?########### side Feed  #######
