@@ -200,9 +200,13 @@ body {
     justify-items: center;
     align-items: center; }
     .header__seenon-logos img {
-      max-height: 2.5rem;
+      max-height: 4rem;
       max-width: 100%;
-      filter: brightness(70%); }
+      margin: 0 5rem 0 5rem;
+      filter: brightness(60%); }
+      @media only screen and (max-width: 37.5em) {
+        .header__seenon-logos img {
+          margin: 0; } }
 
 .blog {
   grid-column: col-start / col-start 7;
@@ -337,6 +341,9 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center; }
+    @media only screen and (max-width: 50em) {
+      .feed__cart {
+        margin: 0; } }
     .feed__cart:hover, .feed__cartlink:active {
       background-image: linear-gradient(rgba(39, 143, 196, 0.3), rgba(39, 143, 196, 0.3)), url(../img/home.jpg); }
     .feed__cart--title {

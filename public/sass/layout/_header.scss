@@ -60,9 +60,13 @@
         align-items: center;
 
         img {
-            max-height: 2.5rem;
+            max-height: 4rem;
             max-width: 100%;
-            filter: brightness(70%);
+            margin: 0 5rem 0 5rem;
+            filter: brightness(60%);
+            @media only screen and (max-width: $bp-small) {
+                margin: 0;
+            }
         }
     }
 }
